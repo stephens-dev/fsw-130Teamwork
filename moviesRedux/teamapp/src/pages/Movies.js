@@ -12,4 +12,4 @@ function Movies(props) {
 }
 
 
-export default Movies
+export default Movies 
