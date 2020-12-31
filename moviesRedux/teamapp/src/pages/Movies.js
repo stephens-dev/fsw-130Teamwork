@@ -7,6 +7,7 @@ function Movies(props) {
   
     let newMovies = movies.map(movie => { return <li>{movie}</li>})
     return(
+        
         <ul>{newMovies}</ul>
     )
 }

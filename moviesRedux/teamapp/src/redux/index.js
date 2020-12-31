@@ -1,6 +1,7 @@
 
 import {configureStore} from '@reduxjs/toolkit'
 import MovieReducer from './movies'
+import showReducer from './tvshows'
 const redux = require("redux")
 // const {combineReducers, createStore} = redux
 
@@ -12,7 +13,8 @@ const redux = require("redux")
 
 const store = configureStore({
     reducer: {
-        movies: MovieReducer
+        movies: MovieReducer,
+        shows: showReducer
     }
 })
 
