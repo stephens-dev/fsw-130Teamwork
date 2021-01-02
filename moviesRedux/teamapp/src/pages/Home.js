@@ -1,17 +1,25 @@
 import React from 'react'
+import pic from './images/movie.jpg'
+import pic2 from './images/tv.jpg'
+import {Link} from 'react-router-dom'
 
 
 function Home() {
     return(
-        <div className="homeDiv">
-            <div className="movieDisplay">
+        <div className="main_container">
+            <Link to="/Movies" id="link">
+            <div className="movie_display">
                     <h1>Movies</h1>
+                    <img src={pic}></img>
+                    
             </div>
-
-            <div className="tvShowDisplay">
-                    <h1>Tv Shows</h1>
+            </Link>
+            <Link to="/TvShows" id="link">
+            <div className="show_display">
+                    <h1>TV Shows</h1>
+                    <img src={pic2}></img>
             </div>
-
+            </Link>
         </div>
     )
 }

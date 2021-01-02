@@ -6,6 +6,7 @@ import './index.css';
 import App from './App';
 import {BrowserRouter as Router} from 'react-router-dom'
 import reportWebVitals from './reportWebVitals';
+import { addMovie } from './redux/movies';
 
 ReactDOM.render(
   <React.StrictMode>
